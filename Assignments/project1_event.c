@@ -16,7 +16,7 @@ int main(void){
     int hour_charge;
     int total;
     // prompt user to enter package selection
-    printf("Please select from three packages: 1, 2 and 3\n");
+    printf("Please select from three packages: 1, 2, and 3\n");
     printf("Enter package selection: ");
     scanf("%d", &package);
     // check if the package selection is valid
