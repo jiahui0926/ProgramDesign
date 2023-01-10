@@ -54,6 +54,7 @@ int main(void){
         // check if the number of guests is valid
         else if (people > 300 && package == 2){
             printf("Exceeded maximum number of guests.\n");
+            return 0;
         }
         // check if the number of guests is valid
         else if (people < 30 && package == 3){
@@ -101,7 +102,7 @@ int main(void){
     }
     }
     // print the total cost
-    printf("%d\n",total);
+    printf("Charge($)%d\n",total);
 
 
     return 0;
