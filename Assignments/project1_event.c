@@ -29,7 +29,7 @@ int main(void){
     scanf("%d", &hours);
     // check if the number of hours is valid
     if (hours < 1 || hours > 4){
-        printf("Invalid hours. Enter a positive number less than or equal to 4 for number of hours.\n");
+        printf("Invalid input. Enter a positive number less than or equal to 4 for number of hours.\n");
         return 0;
     }
     // check if the number of guests is valid
