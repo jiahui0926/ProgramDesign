@@ -59,16 +59,20 @@ int main(void){
             printf("Exceeded maximum number of guests.");
         }
         // calculate the total cost
-        else { 
+        else {
+	    // check the package number 
             if (package == 1){
                 hour_charge = 50 + (hours - 1) * 25;
+		//compare the rental price with the maximum rental price
                 if (hour_charge > 95){
                     hour_charge = 95;
                 }
                 total = hour_charge + people * 25;
             }
+	    //check the package number
             else if (package == 2){
                 hour_charge = 30 + (hours - 1) * 15;
+		//check the rental price with the maximum rental price
                 if (hour_charge > 55){
                     hour_charge = 55;
                 }
@@ -87,7 +91,7 @@ int main(void){
     }
     }
     // print the total cost
-    printf("%d",total);
+    printf("%d\n",total);
 
 
     return 0;
