@@ -103,7 +103,7 @@ int main(void){
     }
     }
     // print the total cost
-    printf("Charge($)%d\n",total);
+    printf("Charge($): $%d\n",total);
 
 
     return 0;
