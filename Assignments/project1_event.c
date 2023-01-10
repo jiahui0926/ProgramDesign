@@ -66,6 +66,7 @@ int main(void){
             printf("Exceeded maximum number of guests.\n");
             return 0;
         }
+    
         // calculate the total cost
         else {
 	    // check the package number 
@@ -76,7 +77,7 @@ int main(void){
                     hour_charge = 95;
                 }
                 total = hour_charge + people * 25;
-                return 0;
+            
             }
 	    //check the package number
             else if (package == 2){
@@ -86,7 +87,7 @@ int main(void){
                     hour_charge = 55;
                 }
                 total = hour_charge + people * 22;
-                return 0;
+        
             }
             else {
                 hour_charge = 20 + (hours - 1) * 12;
@@ -94,7 +95,7 @@ int main(void){
                     hour_charge = 40;
                 }
                 total = hour_charge + people * 20;
-                return 0;
+            
             }
             
         }
