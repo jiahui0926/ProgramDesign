@@ -38,31 +38,31 @@ int main(void){
         scanf("%d", &people);
         // check if the number of guests is valid
         if (people < 50 && package == 1){
-            printf("Not meeting minimum requirement for number of guests.");
+            printf("Not meeting minimum requirement for number of guests.\n");
             return 0;
         }
         // check if the number of guests is valid
         else if (people > 300 && package == 1){
-            printf("Exceeded maximum number of guests.");
+            printf("Exceeded maximum number of guests.\n");
             return 0;
         }
         // check if the number of guests is valid
         else if (people < 80 && package == 2){
-            printf("Not meeting minimum requirement for number of guests.");
+            printf("Not meeting minimum requirement for number of guests.\n");
             return 0;
         }
         // check if the number of guests is valid
         else if (people > 300 && package == 2){
-            printf("Exceeded maximum number of guests.");
+            printf("Exceeded maximum number of guests.\n");
         }
         // check if the number of guests is valid
         else if (people < 30 && package == 3){
-            printf("Not meeting minimum requirement for number of guests.");
+            printf("Not meeting minimum requirement for number of guests.\n");
             return 0;
         }
         // check if the number of guests is valid
         else if (people > 150 && package == 3){
-            printf("Exceeded maximum number of guests.");
+            printf("Exceeded maximum number of guests.\n");
             return 0;
         }
         // calculate the total cost
