@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+//Jiahui Dang
+//U30621629
+
 int main(void){
     int package;
     int hours;
