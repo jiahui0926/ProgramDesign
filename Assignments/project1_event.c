@@ -1,6 +1,7 @@
 /*
     * Name: project1.c 
-    purpose: This program will calculate the total cost of a party based on the number of guests, number of hours and the package selected.
+    purpose: This program will prompt the user to enter the package selection, number of hours and number of guests.
+    Then the program will calculate the total cost of the event.
     Author: Jiahui Dang
 
 */
@@ -32,7 +33,6 @@ int main(void){
         printf("Invalid input. Enter a positive number less than or equal to 4 for number of hours.\n");
         return 0;
     }
-    // check if the number of guests is valid
     else {
         printf("Enter number of people: ");
         scanf("%d", &people);
@@ -67,22 +67,22 @@ int main(void){
             return 0;
         }
     
-        // calculate the total cost
+        // calculate the total cost if every information is valid
         else {
-	    // check the package number 
+	        // check the package number 
             if (package == 1){
                 hour_charge = 50 + (hours - 1) * 25;
-		//compare the rental price with the maximum rental price
+		    //compare the rental price with the maximum rental price
                 if (hour_charge > 95){
                     hour_charge = 95;
                 }
                 total = hour_charge + people * 25;
             
             }
-	    //check the package number
+	        //check the package number
             else if (package == 2){
                 hour_charge = 30 + (hours - 1) * 15;
-		//check the rental price with the maximum rental price
+		        //check the rental price with the maximum rental price
                 if (hour_charge > 55){
                     hour_charge = 55;
                 }
@@ -96,10 +96,8 @@ int main(void){
                 }
                 total = hour_charge + people * 20;
             
-            }
-            
+            }      
         }
-
     }
     }
     // print the total cost
